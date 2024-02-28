@@ -28,19 +28,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-.title:hover {
-  color: rgba(255, 204, 110, 0.8);
-}
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .title {
   font-size: 1.5em;
   font-weight: bold;
   margin-right: 10px;
-  color: rgba(255, 204, 110, 1);
-  text-shadow: -1px -1px 0 black,
-   1px -1px 0 black, 
-   -1px 1px 0 black, 
-   1px 1px 0 black;
+  color: rgba(255, 204, 110, 1); /* Yellow text color with full opacity */
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Black border */
 }
 

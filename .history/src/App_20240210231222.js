@@ -6,13 +6,22 @@ import data from "./components/data.js"
 import { useState } from "react"
 import Sidebar from "./components/sidebar.js"
 import Editor from "./components/editor.js"
-import Navbar from "./components/navbar.js"
+import TEXT from "./components/text.js"
 
 function App() {
   const [notes, setNotes] = useState(data)
+  const updateNote = (newBody) => {
+    setNotes((prevNotes) => {
+      return prevNotes.map((note) => {
+        if (note.selected) {
+          return { ...note, body: newBody };
+        }
+        return note;
+      });
+    });
+  };
   return (
     <div className="App">
-      <Navbar notes={notes} setNotes={setNotes} />
       <SplitPane split="vertical">
         <Pane
           size="25%"
@@ -27,6 +36,7 @@ function App() {
           maxSize="75%"
         >
           <Editor notes={notes} setNotes={setNotes} />
+          <TEXT currentNote={notes.find(note => note.selected)} updateNote={updateNote}/>
         </Pane>
       </SplitPane>
     </div>

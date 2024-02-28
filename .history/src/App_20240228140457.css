@@ -29,18 +29,26 @@
   justify-content: space-between;
   align-items: center;
 .title:hover {
-  color: rgba(255, 204, 110, 0.8);
+  color: rgba(255, 204, 110, 0.8); /* Yellow text color with 80% opacity */
 }
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.title:active {
+  color: rgba(255, 204, 110, 0.6); /* Yellow text color with 60% opacity */
+}
+.title:visited {
+  color: rgba(255, 204, 110, 0.4); /* Yellow text color with 40% opacity */
+}
+.title:focus {
+  color: rgba(255, 204, 110, 0.2); /* Yellow text color with 20% opacity */
+}
+.title:disabled {
+  color: rgba(255, 204, 110, 0.1); /* Yellow text color with 10% opacity */
+}
 }
 .title {
   font-size: 1.5em;
   font-weight: bold;
   margin-right: 10px;
-  color: rgba(255, 204, 110, 1);
-  text-shadow: -1px -1px 0 black,
-   1px -1px 0 black, 
-   -1px 1px 0 black, 
-   1px 1px 0 black;
+  color: rgba(255, 204, 110, 1); /* Yellow text color with full opacity */
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black; /* Black border */
 }
 

@@ -12,7 +12,7 @@ function App() {
   const [notes, setNotes] = useState(data)
   return (
     <div className="App">
-      <Navbar notes={notes} setNotes={setNotes} />
+      <Navbar />
       <SplitPane split="vertical">
         <Pane
           size="25%"

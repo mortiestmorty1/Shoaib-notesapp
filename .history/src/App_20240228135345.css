@@ -21,26 +21,10 @@
   max-height: 550px;
 }
 .navbar-container {
-  background-color: #f8f8f8;
-}
-.navbar{
-  background-color: #f8f8f8;
   display: flex;
   justify-content: space-between;
   align-items: center;
-.title:hover {
-  color: rgba(255, 204, 110, 0.8);
+  padding: 0 20px;
+  background-color: #f8f8f8;
+  
 }
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.title {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin-right: 10px;
-  color: rgba(255, 204, 110, 1);
-  text-shadow: -1px -1px 0 black,
-   1px -1px 0 black, 
-   -1px 1px 0 black, 
-   1px 1px 0 black;
-}
-
